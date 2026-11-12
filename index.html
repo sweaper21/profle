@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- #KOMEN: ganti judul tab browser -->
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header class="nav">
+  <a class="logo" href="#home"><span data-p="short"></span><i>+</i></a>
+  <nav><a href="#karya">Karya</a><a href="#awards">Awards</a><a href="#tentang">Tentang</a><a href="#perjalanan">Perjalanan</a><a href="#kontak">Kontak</a></nav>
+  <button id="motion"></button><a class="btn sm" href="#kontak">Let's talk</a>
+</header>
+
+<section id="home" class="hero">
+  <p class="eyebrow" data-p="tag"></p>
+  <h2 class="giant" aria-hidden="true">PORTFOLIO</h2>
+  <!-- #KOMEN: FOTO UTAMA (tengah). Background sudah dihapus. Ganti file: assets/img/foto-profil.png (PNG transparan) -->
+  <img class="me" src="assets/img/foto-profil.png" alt="Foto profil">
+  <div class="hl">
+    <p class="script">Hello, I'm</p>
+    <h1 data-p="name"></h1>
+    <p class="role" data-p="role"></p>
+    <p class="desc" data-p="desc"></p>
+    <a class="btn" href="#karya">Lihat kegiatan saya ↓</a>
+    <p class="loc" data-p="loc"></p>
+  </div>
+  <aside class="stats">
+    <p>Setiap langkah.<br>Cerita yang berbeda.</p><ul id="stats"></ul>
+    <!-- #KOMEN: file CV ada di assets/cv.pdf (ganti file ini kalau CV diperbarui) -->
+    <a href="assets/cv.pdf" download="CV-Kak-Faiq.pdf">Download CV ↓</a>
+  </aside>
+  <div class="hb"><span>Scroll untuk menjelajah</span><span>Kegiatan terpilih 2022 – 2026</span></div>
+</section>
+
+<section id="karya" class="sec">
+  <p class="lab">01 / Kegiatan pilihan</p><h2 class="h">Kegiatan yang bicara.</h2>
+  <div class="tabs" id="tabs"></div><div class="grid" id="works"></div>
+  <button class="more" id="more"></button>
+  <p class="lab sub">Bagian dari cerita yang lebih besar</p>
+  <!-- #KOMEN: ganti teks ini dengan logo (<img>) organisasi kamu jika ada -->
+  <div class="logos" id="logos"></div>
+</section>
+
+<section id="awards" class="sec two">
+  <div class="rv">
+    <p class="lab">Recognition &amp; Awards</p>
+    <h2 class="h">Kerja keras.<br><em>Pengakuan.</em></h2>
+    <div class="big"><span id="acount"></span><small>Pencapaian</small></div>
+    <p class="mu">Cerita yang dibuat sepenuh hati. Pencapaian yang jadi alasan untuk terus berkarya.</p>
+    <a class="lnk" href="#">Lihat sertifikat ↗</a>
+  </div>
+  <ul class="alist rv" id="awardList"></ul>
+</section>
+
+<section id="pembina" class="sec two">
+  <div class="rv">
+    <p class="lab">Pembina aktif</p>
+    <h2 class="h">Membina di<br><em>sekolah.</em></h2>
+    <div class="big"><span id="pcount"></span><small>Sekolah binaan</small></div>
+    <p class="mu">Mendampingi gugus depan Pramuka, dari sekolah dasar sampai madrasah aliyah.</p>
+  </div>
+  <ul class="alist rv" id="pembinaList"></ul>
+</section>
+
+<section id="tentang" class="sec">
+  <p class="lab">02 / Di balik layar</p>
+  <h2 class="h">Bukan sekadar kegiatan.<br>Tapi cara <em>berproses.</em></h2>
+  <div class="three">
+    <div class="rv"><p class="lab">Education &amp; Skills</p><div id="edu"></div><p class="lab">Toolkit</p><div class="chips" id="chips"></div></div>
+    <div class="rv"><p class="lab">Dari niat sampai jadi</p><ol class="steps" id="steps"></ol></div>
+    <div class="rv"><p class="mu" data-p="about"></p>
+      <blockquote><q data-p="quote"></q><span class="script" data-p="sign"></span></blockquote></div>
+  </div>
+</section>
+
+<section id="perjalanan" class="sec two">
+  <div class="rv">
+    <p class="lab">03 / Perjalanan</p><h2 class="h">Terus bergerak.<br>Terus berkarya.</h2>
+    <ul class="tl" id="tl"></ul>
+  </div>
+  <div class="rv"><h2 class="h sm">Little wins.<br><em>Big meaning.</em></h2><ul class="alist" id="miles"></ul></div>
+</section>
+
+<section id="kontak" class="sec two">
+  <div class="rv">
+    <p class="lab">04 / Cerita berikutnya</p><h2 class="h">Let's work<br>together<em>.</em></h2>
+    <p class="mu">Punya kegiatan atau ide? Mari wujudkan bersama.</p>
+    <ul class="ct" id="ct"></ul>
+    <a class="btn" id="wa" href="#">Mulai percakapan</a>
+  </div>
+  <!-- #KOMEN: kartu video. Foto latarnya bisa diganti di url(...). Video yang diputar: assets/video/profil.mp4 (taruh file video kamu di sana, nama sama) -->
+  <button class="poster rv" id="poster" style="--im:url(assets/img/kml.jpg)" aria-label="Putar video"><h3>Jadikan<br><em>nyata.</em></h3><i></i></button>
+</section>
+<dialog id="vid"><button id="x" aria-label="Tutup">×</button><video controls playsinline preload="none" src="assets/video/profil.mp4"></video></dialog>
+<footer><span class="logo"><span data-p="short"></span><i>+</i></span><span>© <span id="yr"></span> <span data-p="name"></span></span></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script>
+</body></html>
